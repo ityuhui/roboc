@@ -10,7 +10,7 @@ public class FetchUtil {
 	
 	private final static String BASEURL = "http://xueqiu.com/S/"; 
 	
-	public void printSto(String code){
+	public static void printSto(String code){
 		Document doc;
 		try {
 			String url = BASEURL + code ;
