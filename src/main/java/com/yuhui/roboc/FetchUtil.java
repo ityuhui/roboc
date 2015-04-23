@@ -18,11 +18,15 @@ public class FetchUtil {
 			//System.out.println(doc);
 			Element name = doc.select(".stockName").first();
 			Element cp = doc.select(".stockUp").first();
+			if( null == cp ){
+				cp = doc.select(".stockDown").first();
+			}
 			String output = name.text() + ":" + cp.text();
 			System.out.println(output);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 }
