@@ -37,9 +37,9 @@ public class FetchUtil {
 			StockItem si = (StockItem)mData.get(code);
 			
 			double cpv = Double.parseDouble(cp2) - si.getCost();
-			double rate = cpv / si.getCost();
-			System.out.println(rate);
-			System.out.println(si.getHold() * cpv);
+			double rate = cpv / si.getCost() * 100.0;
+			System.out.printf("%+.2f%%\n",rate);
+			System.out.printf("%.2f\n",si.getHold() * cpv);
 			
 			
 		} catch (IOException e) {
