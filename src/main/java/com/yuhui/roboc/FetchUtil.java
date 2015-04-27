@@ -14,8 +14,8 @@ public class FetchUtil {
 	
 	private final static Map mData = new HashMap<String,StockItem>(){
 		{
-			put("SZ002340",new StockItem("SZ002340",1000,10.0));
-			put("SH600660",new StockItem("SH600660",1000,10.0));
+			put("SZ002340",new StockItem("SZ002340",1800,18.379));
+			put("SH600660",new StockItem("SH600660",1100,16.239));
 		}
 		
 	};
