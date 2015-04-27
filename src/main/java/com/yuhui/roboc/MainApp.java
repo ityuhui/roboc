@@ -31,7 +31,7 @@ public class MainApp {
 			    .withIdentity("trigger1", "group1")
 			    .startNow()
 			    .withSchedule(simpleSchedule()
-			            .withIntervalInSeconds(5)
+			            .withIntervalInSeconds(10)
 			            .repeatForever())
 			    .build();
 
