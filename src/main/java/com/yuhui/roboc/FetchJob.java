@@ -8,7 +8,6 @@ public class FetchJob implements Job {
 
 	@Override
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
-		FetchUtil.printSto("SZ002340");
-		FetchUtil.printSto("SH600660");
+		FetchUtil.printStock();
 	}
 }
